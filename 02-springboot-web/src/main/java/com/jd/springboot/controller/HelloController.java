@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HelloController {
 
     @RequestMapping("/boot/hello")
-    @ResponseBody
-    public String hello() {
+    public @ResponseBody String hello() {
         return "Hello Spring Boot";
     }
 }
