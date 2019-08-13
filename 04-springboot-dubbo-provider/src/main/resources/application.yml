@@ -1,0 +1,18 @@
+##内嵌的Tomcat服务端口
+server:
+  port: 8088
+
+##dubbo配置
+spring:
+  datasource:
+    username: root
+    password: root
+    url: 'jdbc:mysql://127.0.0.1:3306/springboot?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC'
+    driverClassName: com.mysql.jdbc.Driver
+dubbo:
+  protocol:
+    name: dubbo
+    port: 20880
+  application:
+    name: springboot-dubbo-provider
+    registry: 'zookeeper://127.0.0.1:2181'

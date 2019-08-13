@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/04-springboot-dubbo-interface/04-springboot-dubbo-interface.iml" filepath="$PROJECT_DIR$/04-springboot-dubbo-interface/04-springboot-dubbo-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-springboot-dubbo-provider/04-springboot-dubbo-provider.iml" filepath="$PROJECT_DIR$/04-springboot-dubbo-provider/04-springboot-dubbo-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/learn-springboot.iml" filepath="$PROJECT_DIR$/.idea/learn-springboot.iml" />
     </modules>
   </component>
