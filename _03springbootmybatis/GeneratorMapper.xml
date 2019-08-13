@@ -56,8 +56,8 @@
         </javaClientGenerator>
 
         <!-- 数据库表名及对应的Java模型类名 -->
-        <table tableName="student"
-               domainObjectName="Student"
+        <table tableName="studententity"
+               domainObjectName="StudentEntity"
                enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false"
