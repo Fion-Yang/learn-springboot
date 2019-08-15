@@ -2,18 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-
     <groupId>com.jd.springboot</groupId>
-    <artifactId>04-springboot-dubbo-provider</artifactId>
+    <artifactId>04-springboot-dubbo-consumer</artifactId>
     <version>1.0.0</version>
-    <name>04-springboot-dubbo-provider</name>
+    <name>04-springboot-dubbo-consumer</name>
     <description>project for Spring Boot</description>
 
     <properties>
@@ -32,7 +30,14 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- springboot集成dubbo的起步依赖 -->
+        <!-- dubbo接口项目的jar依赖 -->
+        <dependency>
+            <groupId>com.jd.springboot</groupId>
+            <artifactId>04-springboot-dubbo-interface</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!--springboot集成dubbo的起步依赖 -->
         <!--<dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
@@ -44,18 +49,11 @@
             <version>2.0.0</version>
         </dependency>
 
-        <!-- zookeeper的客户端jar依赖包 -->
+        <!-- zookeeper的客户端jar依赖 -->
         <dependency>
             <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>
             <version>0.10</version>
-        </dependency>
-
-        <!-- dubbo接口项目的jar依赖 -->
-        <dependency>
-            <groupId>com.jd.springboot</groupId>
-            <artifactId>04-springboot-dubbo-interface</artifactId>
-            <version>1.0.0</version>
         </dependency>
 
         <!--<dependency>
@@ -70,23 +68,6 @@
         </dependency>-->
 
 
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>1.3.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.47</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.12.6</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -96,28 +77,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                </includes>
-            </resource>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </resource>
-            <!--<resource>
-                <directory>src/main/webapp</directory>
-                <targetPath>META-INF/resources</targetPath>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </resource>-->
-        </resources>
     </build>
 
 </project>

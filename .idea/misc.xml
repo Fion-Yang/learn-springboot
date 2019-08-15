@@ -8,6 +8,7 @@
       <list>
         <option value="$PROJECT_DIR$/04-springboot-dubbo-interface/pom.xml" />
         <option value="$PROJECT_DIR$/04-springboot-dubbo-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/04-springboot-dubbo-consumer/pom.xml" />
       </list>
     </option>
   </component>

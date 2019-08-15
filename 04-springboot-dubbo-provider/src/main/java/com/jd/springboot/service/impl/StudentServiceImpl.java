@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @Date: 2019/8/13
  * @Description:
  */
-@Service(version = "1.0.0", timeout = 10000)    //dubbo的service注解
+@Service(version = "1.0.0", timeout = 10000, interfaceClass = StudentService.class)    //dubbo的service注解
 @Component
 public class StudentServiceImpl implements StudentService {
 
