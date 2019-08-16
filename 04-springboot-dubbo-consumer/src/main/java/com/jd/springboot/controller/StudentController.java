@@ -21,4 +21,9 @@ public class StudentController {
     public Object getStudent(@PathVariable("id") Integer id) {
         return studentService.getStudent(id);
     }
+
+    @GetMapping("/boot/hi/{name}")
+    public Object sayHi(@PathVariable("name") String name) {
+        return studentService.sayHi(name);
+    }
 }
