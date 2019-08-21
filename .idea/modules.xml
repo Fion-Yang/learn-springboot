@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/04-springboot-dubbo-consumer/04-springboot-dubbo-consumer.iml" filepath="$PROJECT_DIR$/04-springboot-dubbo-consumer/04-springboot-dubbo-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/04-springboot-dubbo-interface/04-springboot-dubbo-interface.iml" filepath="$PROJECT_DIR$/04-springboot-dubbo-interface/04-springboot-dubbo-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/04-springboot-dubbo-provider/04-springboot-dubbo-provider.iml" filepath="$PROJECT_DIR$/04-springboot-dubbo-provider/04-springboot-dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-springboot-java/05-springboot-java.iml" filepath="$PROJECT_DIR$/05-springboot-java/05-springboot-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-springboot-war/06-springboot-war.iml" filepath="$PROJECT_DIR$/06-springboot-war/06-springboot-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-springboot-jar/07-springboot-jar.iml" filepath="$PROJECT_DIR$/07-springboot-jar/07-springboot-jar.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/learn-springboot.iml" filepath="$PROJECT_DIR$/.idea/learn-springboot.iml" />
     </modules>
   </component>
