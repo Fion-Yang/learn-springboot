@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+
+    <body>
+        <!--<p th:each="user : ${users}">
+            <span th:text="${userStat.count}">序号</span>
+            <span th:text="${user.id}">1</span>
+            <span th:text="${user.nick}">Cheryl</span>
+            <span th:text="${user.phone}">13910733521</span>
+            <span th:text="${user.address}">安徽合肥</span>
+        </p>-->
+
+        <!--<p th:each="entry : ${map}">
+            <span th:text="${entry.key}">序号</span>
+            <span th:text="${entry.value.id}">1</span>
+            <span th:text="${entry.value.nick}">Cheryl</span>
+            <span th:text="${entry.value.phone}">13910733521</span>
+            <span th:text="${entry.value.address}">安徽合肥</span>
+        </p>-->
+
+        <p th:each="user : ${userArray}">
+            <span th:text="${userStat.count}">序号</span>
+            <span th:text="${user.id}">1</span>
+            <span th:text="${user.nick}">Cheryl</span>
+            <span th:text="${user.phone}">13910733521</span>
+            <span th:text="${user.address}">安徽合肥</span>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+
+    <body>
+        <span th:text="${user.nick}">Cheryl</span>
+        <span th:text="${user.phone}">13910733521</span>
+        <!--<span th:text="${user.email}">fion@jd.com</span>-->
+        <span th:text="${user.address}">安徽合肥</span>
+
+        <span th:text="${hello}">你好</span>
+
+        <div th:object="${user}">
+            <p>Nick: <span th:text="*{nick}"></span></p>
+            <p>Phone: <span th:text="*{phone}"></span></p>
+            <p>Address: <span th:text="*{address}"></span></p>
+        </div>
+
+        <p>Nick: <span th:text="*{user.nick}"></span></p>
+        <p>Phone: <span th:text="*{user.phone}"></span></p>
+        <p>Address: <span th:text="*{user.address}"></span></p>
+
+        <a href="index.html" th:href="@{'http://localhost:8080/boot/user/info/' + ${user.id}}">查看用户id1</a>
+        <a href="index.html" th:href="@{|http://localhost:8080/boot/user/info/${user.id}|}">查看用户id2</a>
+
+        <a href="index.html" th:href="@{|boot/user/info/${user.id}|}">相对URL页面</a>
+        <a href="index.html" th:href="@{|/boot/user/info/${user.id}|}">相对URL上下文</a>
+
+        <form id="login" th:action="@{/boot/login}">...</form>
+
+        <span th:id="${user.id}">动态设定id</span>
+
+        <br/>
+        <span th:if="${sex eq 1}">男</span>
+        <span th:if="${sex eq 2}">女</span>
+
+        <br/>
+        <span th:unless="${sex eq 1}">男</span>
+        <span th:unless="${sex eq 2}">女</span>
+
+        <br/>
+        <span th:switch="${city}">
+            <span th:case="1">北京</span>
+            <span th:case="2">上海</span>
+            <span th:case="*">其他城市</span>
+        </span>
+
+        <br/>
+        <img th:src="@{/image/logo.jpg}" />
+        <!--<img src="http://localhost:8080/thymeleaf/image/logo.jpg">-->
+
+        <br/>
+        <input type="text" id="nick" name="nick" th:text="${user.nick}"/>
+        <input type="text" id="phone" name="phone" th:value="${user.phone}"/>
+    </body>
+</html>
