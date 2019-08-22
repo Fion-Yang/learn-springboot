@@ -55,5 +55,39 @@
         <br/>
         <input type="text" id="nick" name="nick" th:text="${user.nick}"/>
         <input type="text" id="phone" name="phone" th:value="${user.phone}"/>
+
+        <br/>
+        <span th:text="1992">2016</span>年<span th:text="6 + 6">1</span>月<span th:text="2 * 11">14</span>日
+
+        <br/>
+        <p th:if="${isFlag == true}">
+            <span th:text="${isFlag}">false</span>
+        </p>
+        <br/>
+        <p th:if="${user == null}">
+            user为空
+        </p>
+        <p th:if="${user != null}">
+            user不为空
+        </p>
+
+        <br/>
+        <span th:text="'当前是第' + ${sex} + '页，共' + ${sex} + '页'"></span>
+        <span th:text="|当前是第${sex}页，共${sex}页|"></span>
+
+        <br/>
+        <span th:text="${sex eq 1} ? 男 : 女"></span>
+
+        <br/>
+        <span th:text="${#request.getAttribute('name')}"></span>
+        <span th:text="${#request.getContextPath()}"></span>
+
+        <br/>
+        <span th:text="${#session.getAttribute('address')}"></span>
+        <span th:text="${#session.id}"></span>
+        <span th:text="${#session.lastAccessedTime}"></span>
+
+        <br/>
+        <span th:text="${#dates.format(#session.lastAccessedTime, 'yyyy-MM-dd HH:mm:ss')}"></span>
     </body>
 </html>

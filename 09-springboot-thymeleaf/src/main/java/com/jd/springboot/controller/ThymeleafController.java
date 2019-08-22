@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -27,7 +28,7 @@ public class ThymeleafController {
     }
 
     @RequestMapping("/boot/user")
-    public String user(Model model) {
+    public String user(Model model, HttpServletRequest request) {
         User user = new User();
         user.setId(1);
         user.setNick("Fion");
@@ -37,6 +38,9 @@ public class ThymeleafController {
         model.addAttribute("hello", "helloworld");
         model.addAttribute("sex", 1);
         model.addAttribute("city", "2");
+        model.addAttribute("isFlag", true);
+        request.setAttribute("name", "Fion");
+        request.getSession().setAttribute("address", "北京");
         return "user";
     }
 
