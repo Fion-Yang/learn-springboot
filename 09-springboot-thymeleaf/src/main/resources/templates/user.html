@@ -89,5 +89,11 @@
 
         <br/>
         <span th:text="${#dates.format(#session.lastAccessedTime, 'yyyy-MM-dd HH:mm:ss')}"></span>
+
+
+        <script th:inline="javascript" type="text/javascript">
+            var msg = [[${#request.getAttribute('name')}]]
+            alert(msg);
+        </script>
     </body>
 </html>
