@@ -20,4 +20,12 @@ public interface UserService {
      */
     Integer getTotal();
 
+    Integer addUser(User user);
+
+    Integer modifyUser(User user);
+
+    Integer deleteUser(Integer id);
+
+    User getUserById(Integer id);
+
 }

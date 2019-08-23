@@ -10,27 +10,28 @@
 
     <body style="margin-left: 200px; margin-right: 200px">
         <table class="table table-striped">
-            <caption>用户信息表</caption>
+            <caption style="text-align: center; font-family: 华文楷体; font-size: xx-large; font-weight: bold; color: black">用户信息表</caption>
+            <caption style="text-align: right;"><a th:href="@{/user/jump/add}">添加用户</a></caption>
             <thead>
                 <tr>
-                    <th>序号</th>
-                    <th>昵称</th>
-                    <th>手机</th>
-                    <th>邮箱</th>
-                    <th>地址</th>
-                    <th>操作</th>
+                    <th style="text-align: center;">序号</th>
+                    <th style="text-align: center;">昵称</th>
+                    <th style="text-align: center;">手机</th>
+                    <th style="text-align: center;">邮箱</th>
+                    <th style="text-align: center;">地址</th>
+                    <th style="text-align: center;">操作</th>
                 </tr>
             </thead>
             <tbody>
                 <tr th:each="user : ${users}">
-                    <td th:text="${userStat.count}"></td>
-                    <td th:text="${user.nick}"></td>
-                    <td th:text="${user.phone}"></td>
-                    <td th:text="${user.email}"></td>
-                    <td th:text="${user.address}"></td>
-                    <td>
-                        <a th:href="@{/user/modify}">修改</a>&nbsp
-                        <a th:href="@{/user/delete}">删除</a>
+                    <td style="text-align: center;" th:text="${userStat.count}"></td>
+                    <td style="text-align: center;" th:text="${user.nick}"></td>
+                    <td style="text-align: center;" th:text="${user.phone}"></td>
+                    <td style="text-align: center;" th:text="${user.email}"></td>
+                    <td style="text-align: center;" th:text="${user.address}"></td>
+                    <td style="text-align: center;">
+                        <a th:href="@{|/user/jump/modify/${user.id}|}">修改</a>&nbsp
+                        <a th:href="@{|/user/delete/${user.id}|}">删除</a>
                     </td>
                 </tr>
                 <tr style="text-align: center;">

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
@@ -67,13 +68,33 @@ public class UserController {
         return "index";
     }
 
-    @RequestMapping("/user/modify")
-    public String modify() {
+    @RequestMapping("/user/jump/modify/{id}")
+    public String jumpModify(@PathVariable("id") Integer id, Model model) {
+        User user = userService.getUserById(id);
+        model.addAttribute("user", user);
         return "modify";
     }
 
-    @RequestMapping("/user/delete")
-    public void delete() {
+    @RequestMapping(value = "/user/modify", method = RequestMethod.POST)
+    public String modify(User user) {
+        userService.modifyUser(user);
+        return "redirect:/user";
+    }
 
+    @RequestMapping("/user/delete/{id}")
+    public String delete(@PathVariable("id") Integer id) {
+        userService.deleteUser(id);
+        return "redirect:/user";
+    }
+
+    @RequestMapping("/user/jump/add")
+    public String jumpAdd() {
+        return "add";
+    }
+
+    @RequestMapping(value = "/user/add", method = RequestMethod.POST)
+    public String add(User user) {
+        userService.addUser(user);
+        return "redirect:/user";
     }
 }
