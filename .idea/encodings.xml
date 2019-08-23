@@ -7,6 +7,8 @@
     <file url="file://$PROJECT_DIR$/06-springboot-war" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/07-springboot-jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09-springboot-thymeleaf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/10-springboot-all-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/10-springboot-all-provider" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

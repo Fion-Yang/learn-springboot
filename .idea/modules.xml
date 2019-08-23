@@ -9,6 +9,9 @@
       <module fileurl="file://$PROJECT_DIR$/06-springboot-war/06-springboot-war.iml" filepath="$PROJECT_DIR$/06-springboot-war/06-springboot-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/07-springboot-jar/07-springboot-jar.iml" filepath="$PROJECT_DIR$/07-springboot-jar/07-springboot-jar.iml" />
       <module fileurl="file://$PROJECT_DIR$/09-springboot-thymeleaf/09-springboot-thymeleaf.iml" filepath="$PROJECT_DIR$/09-springboot-thymeleaf/09-springboot-thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-springboot-all-consumer/10-springboot-all-consumer.iml" filepath="$PROJECT_DIR$/10-springboot-all-consumer/10-springboot-all-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-springboot-all-interface/10-springboot-all-interface.iml" filepath="$PROJECT_DIR$/10-springboot-all-interface/10-springboot-all-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-springboot-all-provider/10-springboot-all-provider.iml" filepath="$PROJECT_DIR$/10-springboot-all-provider/10-springboot-all-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/learn-springboot.iml" filepath="$PROJECT_DIR$/.idea/learn-springboot.iml" />
     </modules>
   </component>

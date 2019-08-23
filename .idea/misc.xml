@@ -16,6 +16,9 @@
         <option value="$PROJECT_DIR$/06-springboot-war/pom.xml" />
         <option value="$PROJECT_DIR$/07-springboot-jar/pom.xml" />
         <option value="$PROJECT_DIR$/09-springboot-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/10-springboot-all-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/10-springboot-all-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/10-springboot-all-consumer/pom.xml" />
       </list>
     </option>
   </component>
